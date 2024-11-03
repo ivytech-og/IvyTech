@@ -1,0 +1,31 @@
+//Hometown Bank
+
+//Determine Monthly Check balance
+
+// Start the program
+BEGIN
+
+// Set up variables
+DECLARE accountBalance
+DECLARE numOverdraws 
+DECLARE fee 
+
+//Obtain account balance and number of overdrafts
+DISPLAY "Enter account balance:"
+INPUT accountBalance
+DISPLAY "Enter number of times overdrawn:"
+INPUT numOverdraws
+
+// Calculate fee: 1% of balance minus $5 for each overdraft
+Process fee = (accountBalance * 0.01) - (numOverdraws * 5)
+
+// Calculate new account balance
+Process newAccountBalance = accountBalance - fee
+
+// Output: Show fee and new balance
+DISPLAY "Fee: ", fee
+DISPLAY "New account balance: ", NewAccountBalance
+DISPLAY "Thanks for using this program"
+
+// End program
+END
