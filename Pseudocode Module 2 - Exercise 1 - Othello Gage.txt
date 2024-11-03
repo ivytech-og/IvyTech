@@ -1,0 +1,43 @@
+//Wongs Appliances
+
+// Plan
+// Step 1: Prompt user for refrigerator model name
+// Step 2: Prompt user for interior dimensions: height, width, and depth in inches
+// Step 3: Calculate the capacity in cubic feet using the formula:
+//         capacity = (height * width * depth) / CUBIC_INCHES_IN_CUBIC_FOOT
+// Step 4: Output the refrigerator model name and calculated capacity in cubic feet
+ 
+//Constants
+Declare Cubic_Feet = 1728
+
+//Variables 
+Declare Model 
+Declare Height 
+Declare Width 
+Declare Depth
+Declare Capacity
+
+
+Start
+
+// Input
+    PROMPT "Enter the refrigerator model name: "
+    Input model
+
+    PROMPT "Enter the interior height in inches: "
+    Input height
+
+    PROMPT "Enter the interior width in inches: "
+    Input width
+
+    PROMPT "Enter the interior depth in inches: "
+    Input depth
+
+// Process
+    Capacity = (height * width * depth) / Cubic_Feet
+
+// Output
+    PRINT "Refrigerator Model: ", modelName
+    PRINT "Capacity in Cubic Feet: ", capacity
+	
+Stop
